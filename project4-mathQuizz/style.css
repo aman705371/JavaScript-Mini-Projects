@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+:root {
+    --primary:rgba(4, 115, 119, 0.907);
+    --secondary:rgb(73, 5, 98);
+    --secondary-light: rgb(0, 153, 255);
+} 
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+ }
+
+html {
+    font-family: "Poppins", sans-serif;
+  }
+
+
+.background {
+    background-image: url("./Quizz.jpg");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display:grid;
+    place-items: center;
+}
+
+.box{
+   background: rgb(184, 177, 177);
+   border-width: 0px 2px 1px 0px;
+   border-style: solid;
+   border-color: aquamarine;
+   width: 40%;
+   height: 50vh;
+   border-radius: 20px;
+   box-shadow:0px 19px 41px rgba(0, 0, 0, 0.36);
+   height: 320px;
+   width:600px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.box h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 54px;
+    color: var(--primary);
+}
+.box h3 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 54px;
+}
+#questionForm{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    width:90%;
+}
+#answerInput {
+    background: transparent;
+    border: 1px solid #000000;
+    border-radius:5px;
+    height:40px;
+    padding:20px;
+    font-size:20px;
+}
+
+#answerInput:focus-visible{
+    outline: 1px solid var(--primary);
+    border: 1px solid var(--primary);
+}
+.primary-btn {
+    height:46px;
+    background-color: var(--primary);
+    border-radius: 10px;
+    border:none;
+    color:white;
+    font-size:32px
+}
+
+@media(max-width:786px) {
+    .box {
+       width:80%;
+       height: 360px;
+    }
+    .box h2 {
+        font-size: 25px;
+        line-height: 40px;
+        color: var(--primary);
+
+    }
+    .box h3 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .primary-btn {
+        height:40px;
+        font-size:30px
+    }
+}
