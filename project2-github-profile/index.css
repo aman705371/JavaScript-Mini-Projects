@@ -1,0 +1,125 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;700&display=swap');
+
+*{
+padding:0;
+margin:0;
+box-sizing: border-box;
+font-family: 'Inter', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+
+.topContainer{
+    display: flex;
+    flex-direction: column;
+    padding:5rem;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.topContainer h1 {
+    font-size:4rem;
+    gap:4rem;
+
+}
+.search{
+    display:flex;
+    flex-direction: row;
+    width: 80%;
+    margin-top:60px;
+    height:70px;
+}
+.search-input{
+  width: 80%; 
+  font-size: 17px;
+  padding: 12px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.search-btn{
+margin:6px;
+  width:10%;
+  padding: 12px;
+  font-size: 17px;
+  background: #840099;
+  color: white;
+  border:none;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+/*----------For Profile------*/
+
+.profile{
+  padding: 4rem 2rem;
+  width:100%;
+  max-width: 100rem;
+  box-shadow: 0 0 1rem reba(0,0,0, 0.1);
+  transition: 0.5s ease-in;
+}
+.profile:hover {
+  transform: rotate(-2deg) scale(1.01);
+  transform: 0.5s ease-in;
+}
+.search-btn:hover{
+    background: #2c0133be;
+  }
+  .search-btn:active{
+    background: #0bd24abe;
+  }
+  
+  .avatar{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    max-width: 100rem;
+    margin:50px 0px 0px 0px;
+    
+  }
+  .pro-id{
+    margin: 140px 900px 0px 0px;
+  }
+.pro-btn{
+    margin:6px;
+    width:100%;
+    padding: 16px;
+  
+    font-size: 17px;
+    background: #840099;
+    color: white;
+    border:none;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.about{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin:50px 0px 0px 50px;
+}
+
+.abt-details{
+  width: 100%;
+}
+.abt-details h2 {
+ width: 20%;
+ font-size: 40px;
+}
+.follower{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px;
+  font-size: 20px;
+  color:green;
+}
+
+.flw-btn{
+  color:#840099
+}
+
+.hide{
+ display: none;
+}
