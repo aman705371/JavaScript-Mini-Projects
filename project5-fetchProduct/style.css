@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+:root {
+    --primary:rgb(235, 47, 47);
+    --secondary:rgb(235, 226, 47);
+    --secondary-light: rgb(0, 153, 255);
+} 
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+ }
+
+html {
+    font-family: "Poppins", sans-serif;
+  }
+
+  .product_container{
+  width:100%;
+  display: flex;
+  flex-direction:column;
+  gap:20px;
+  align-items: center;
+  justify-content: center;
+  }
+  .product_card{
+  display: flex;
+ flex-direction:row;
+  width: 60%;
+  height: 230px;
+  border:none;
+  border-radius: 5px;
+  box-shadow: 2px 7px #ddd7d7;
+  
+  }
+  .image_container{
+     flex:1;
+     padding: 10px;
+    padding:10px 30px;
+     border-right: 1px solid black;
+
+  }
+  .image_container img{
+    width: 100%;
+    height:100%;
+    object-fit: contain;
+ }
+
+ /* <-----product content style---->*/
+
+  .product_content{
+    display:flex;
+    flex-direction:column;
+   flex:5;
+   padding: 10px;
+  }
+  .product_content button{
+    background-color:var(--primary) ;
+    font-size: 20px;
+    color:white;
+    border:none;
+    padding: 5px 20px;
+    margin-top: 10px;
+    align-self: end;
+   }
+   .product_content h2{
+    font-size:16px;
+    font-weight:800;
+   }
+   .product_content p{
+    font-size: 12px;
+    font-weight: 400px;
+    margin-top: 20px;
+    opacity:0.8;
+
+   }
+   /* Input Style*/
+   .header{
+      margin-top: 70px;
+      margin-bottom: 70px;
+   }
+   .input_conatainer{
+      display: flex;
+      justify-content: center;
+      width: 600px;
+      margin:auto;
+      
+   }
+   .search_icon{
+      position: relative;
+      left: 35px;
+      margin-left: -35px;
+      display: grid;
+      place-items: center;
+      
+   }
+   .search_icon img{
+      height: 30px;
+      justify-content: center;
+      margin-top: 5px;
+      
+     
+   }
+   .input_conatainer input{
+      width: 100%;
+      height: 50px;
+     padding-left: 40px;
+     border-radius: 10px;
+     border:2px solid var(--secondary);
+     
+   }
+   .input_conatainer input::placeholder{
+      font-size: 15px;
+      color: var(--secondary-light);
+   }
+   
+   @media (max-width: 786px) {
+    
+        .product_card{
+         width: 90%;
+    }
+    .input_conatainer{
+      width: 90%;
+    }
+}
+@media (max-width: 425px){
+  .product_card{
+     flex-direction:column;       
+  }
+  .product_content button{
+    align-self: stretch;
+   }  
+
+}
