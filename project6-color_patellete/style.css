@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+:root {
+    --primary:rgb(235, 47, 47);
+    --secondary:rgb(235, 226, 47);
+    --secondary-light: rgb(0, 153, 255);
+} 
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+ }
+
+html {
+    font-family: "Poppins", sans-serif;
+  }
+
+    .title_container{
+        display: flex;
+        flex-direction: column;
+        background-color: aqua;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+      }
+    
+      
+  .container {
+    display: grid;
+    place-items: center;
+   height:20vh;
+  }
+  .container button{
+    font-size: 18px;
+    background-color: var(--secondary-light);
+    border: none;
+    color: white;
+    letter-spacing: 1px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .color_container{
+     height:calc(80vh - 70px);
+     display: grid;
+     grid-template-rows: 5fr 4fr 3fr 2fr;
+  }
+  #color1{
+    background-color: brown;
+  }
+  #color2{
+    background-color: yellow;
+  } 
+  #color3{
+    background-color:blue;
+  }
+  #color4{
+    background-color: red;
+  }
+
+.colorBox p{
+  background-color: bisque;
+  padding:10px;
+  width: 150px;
+  margin-top: 10px;
+  margin-left:10px;
+  font-size: 24px;
+  display:none ;
+}
+.colorBox:hover p {
+  display:inline-block;
+}
+  /* Resposive Mobile*/
+
+  @media (Max-Width:786px){
+    .title_container{
+        height: 60px;
+        font-size: 12px;
+    }
+  }
+  
+  @media (Max-Width:384px){
+    .title_container{
+        height: 50px;
+        font-size: 5px;
+    }
+  }
